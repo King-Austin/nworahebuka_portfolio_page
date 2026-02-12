@@ -17,9 +17,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="section-container flex items-center justify-between h-16">
         <a href="#" className="text-xl font-bold">
-          <span className="text-foreground">ebuka</span>
-          <span className="text-primary">.</span>
-          <span className="text-primary font-mono text-sm">dev</span>
+          <span className="text-foreground">Nworah</span>
+          <span className="text-primary ml-1.5">Ebuka</span>
         </a>
 
         {/* Desktop nav */}
