@@ -66,6 +66,17 @@ const ProjectDetail = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <motion.div className="lg:col-span-2 space-y-8" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}>
+            {project.screenshot && (
+              <section className="glass-card overflow-hidden">
+                <img
+                  src={project.screenshot}
+                  alt={`Screenshot of ${project.title} — ${project.subtitle}`}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </section>
+            )}
+
             <section className="glass-card p-6 sm:p-8">
               <h2 className="text-sm font-mono text-primary mb-3">// Problem Statement</h2>
               <p className="text-muted-foreground leading-relaxed">{project.problemStatement}</p>

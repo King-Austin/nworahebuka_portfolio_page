@@ -9,6 +9,7 @@ export interface Project {
   tech: string[];
   link: string | null;
   github: string | null;
+  screenshot: string | null;
 }
 
 export const projects: Project[] = [
@@ -31,6 +32,7 @@ export const projects: Project[] = [
     tech: ["Django", "Ed25519", "ECDH", "PostgreSQL", "REST API", "React"],
     link: "https://www.securecipher.app",
     github: "https://github.com/King-Austin/securecipher-middleware",
+    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fwww.securecipher.app&screenshot=true&meta=false&embed=screenshot.url",
   },
   {
     slug: "nworahsoft-ecommerce",
@@ -51,6 +53,7 @@ export const projects: Project[] = [
     tech: ["Node.js", "Express.js", "MongoDB", "Paystack", "React"],
     link: "https://nworahsoft-ecommerce-tan.vercel.app",
     github: "https://github.com/King-Austin/nworahsoft-laptops-hub",
+    screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fnworahsoft-ecommerce-tan.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
   },
   {
     slug: "attendify",
@@ -71,6 +74,7 @@ export const projects: Project[] = [
     tech: ["Node.js", "Express.js", "MongoDB", "JWT", "Postman"],
     link: null,
     github: "https://github.com/King-Austin/ATTENDIFY-BACKEND",
+    screenshot: null,
   },
   {
     slug: "smart-cbt",
@@ -92,5 +96,6 @@ export const projects: Project[] = [
     tech: ["Django", "SQLite", "Docker", "JavaScript"],
     link: null,
     github: null,
+    screenshot: null,
   },
 ];

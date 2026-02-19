@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, ExternalLink } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profileImg from "@/assets/profile.jpg";
+import TypingAnimation from "./TypingAnimation";
 
 const HeroSection = () => {
   return (
@@ -38,14 +39,14 @@ const HeroSection = () => {
             >
               Nworah Ebuka
             </motion.h1>
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="text-lg sm:text-xl font-mono text-primary mb-4"
+              className="mb-4"
             >
-              Mid-Level Python/Django Backend Engineer
-            </motion.p>
+              <TypingAnimation />
+            </motion.div>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
