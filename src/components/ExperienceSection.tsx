@@ -6,8 +6,8 @@ const experiences = [
   {
     icon: Briefcase,
     title: "Co-founder & Lead Backend Engineer",
-    org: "Wedsync Digital",
-    link: "https://websyncdigital.com.ng",
+    org: "Websync Digital",
+    link: "https://www.websyncdigital.com.ng",
     period: "Present",
     description:
       "Co-founded a digital solutions company delivering production-grade web applications. Lead backend architecture, API design, and security implementation for client projects.",
@@ -19,6 +19,14 @@ const experiences = [
     period: "2024 – Present",
     description:
       "Leading automation and software innovation projects. Driving student engagement in robotics, AI, and systems engineering initiatives.",
+  },
+  {
+    icon: Award,
+    title: "Member — IEEE Industrial Applications Society (IAS)",
+    org: "IEEE",
+    period: "2025",
+    description:
+      "Active member contributing to industrial applications of technology and engineering practices.",
   },
   {
     icon: Award,

@@ -27,21 +27,22 @@ const AboutSection = () => {
           </h3>
 
           <p className="text-muted-foreground leading-relaxed max-w-2xl mb-10">
-            Backend Developer and Co-founder at{" "}
+            Results-driven Backend Developer and Electronic Engineering student
+            with a focus on building secure, scalable systems. Co-founder at{" "}
             <a
-              href="https://websyncdigital.com.ng"
+              href="https://www.websyncdigital.com.ng"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline"
             >
-              Wedsync Digital
+              Websync Digital
             </a>
-            , focused on building efficient, scalable systems that deliver measurable
-            results. Experienced in designing RESTful APIs, optimizing database
-            performance, and deploying microservices using Python and Node.js. As
-            IEEE RAS Chair, I combine technical leadership with hands-on engineering
-            to ship reliable, production-grade backends that improve performance and
-            developer productivity.
+            , with a proven track record in developing cryptographic middleware,
+            real-time academic solutions, and e-commerce platforms for SMEs.
+            Proficient in Python (Django/FastAPI) and Node.js, with a strong
+            emphasis on API security, payment integrations, and database
+            optimization. As IEEE RAS Chair, I combine technical leadership with
+            hands-on engineering to ship reliable, production-grade backends.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
