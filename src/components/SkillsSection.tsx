@@ -4,28 +4,29 @@ import { useRef } from "react";
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["Python", "JavaScript", "SQL", "TypeScript"],
+    skills: ["Python", "JavaScript (Node.js)", "SQL", "TypeScript"],
+  },
+  {
+    title: "Databases",
+    skills: ["PostgreSQL", "MySQL", "SQLite", "MongoDB"],
   },
   {
     title: "Frameworks & APIs",
     skills: ["Django", "FastAPI", "Express.js", "REST APIs", "Microservices"],
   },
   {
-    title: "Databases & Storage",
-    skills: ["MySQL", "SQLite", "MongoDB", "Query Optimization", "DBMS Design"],
-  },
-  {
     title: "DevOps & Tools",
-    skills: ["Docker", "Git & GitHub", "CI/CD", "Postman", "Linux"],
+    skills: ["Docker", "Git & GitHub", "CI/CD", "Postman", "Linux Scripting"],
   },
   {
     title: "Core Competencies",
     skills: [
-      "API Design",
-      "Auth & Security",
-      "Performance Tuning",
-      "Workflow Automation",
-      "Cryptography",
+      "Cryptography (EdDSA, ECDH)",
+      "Payment Gateway Integration",
+      "API Design & Security",
+      "Database Query Optimization",
+      "System Analytics",
+      "AI Prompting",
     ],
   },
 ];

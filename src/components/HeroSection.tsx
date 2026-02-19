@@ -88,7 +88,7 @@ const HeroSection = () => {
             >
               <a href="https://github.com/King-Austin" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub"><Github size={20} /></a>
               <a href="https://www.linkedin.com/in/nworah_ebuka" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn"><Linkedin size={20} /></a>
-              <a href="https://websyncdigital.com.ng" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Wedsync Digital"><ExternalLink size={20} /></a>
+              <a href="https://www.websyncdigital.com.ng" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Websync Digital"><ExternalLink size={20} /></a>
             </motion.div>
           </div>
 

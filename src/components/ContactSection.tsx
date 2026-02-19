@@ -61,11 +61,11 @@ const ContactSection = () => {
               <Linkedin size={22} />
             </a>
             <a
-              href="https://websyncdigital.com.ng"
+              href="https://www.websyncdigital.com.ng"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Wedsync Digital"
+              aria-label="Websync Digital"
             >
               <ExternalLink size={22} />
             </a>
