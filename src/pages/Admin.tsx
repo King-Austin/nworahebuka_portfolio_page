@@ -14,14 +14,14 @@ const Admin = () => {
             <ArrowLeft size={16} />
             Back to Site
           </Link>
-          <h1 className="text-sm font-mono text-primary">// Admin Panel</h1>
+          <span className="text-sm font-mono text-primary">// Admin Panel</span>
         </div>
       </nav>
 
       <div className="section-container pt-28 pb-20">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold">Manage Projects</h2>
+            <h1 className="text-2xl sm:text-3xl font-bold">Manage Projects</h1>
             <p className="text-sm text-muted-foreground mt-1">Add, edit, or remove projects from your portfolio</p>
           </div>
           <button className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors opacity-50 cursor-not-allowed" disabled>
@@ -74,9 +74,7 @@ const Admin = () => {
           <p className="text-sm text-muted-foreground mb-2">
             🔒 Full CRUD functionality will be available when connected to a database.
           </p>
-          <p className="text-xs text-muted-foreground">
-            Add, edit, and delete projects dynamically by enabling Lovable Cloud.
-          </p>
+
         </div>
       </div>
     </main>
