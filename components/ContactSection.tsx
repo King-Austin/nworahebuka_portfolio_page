@@ -21,30 +21,7 @@ const ContactSection = () => {
       value: "+234 814 361 7443",
       href: "tel:+2348143617443",
     },
-    {
-      icon: Github,
-      label: "GitHub",
-      value: "github.com/King-Austin",
-      href: "https://github.com/King-Austin",
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "linkedin.com/in/amkingaustin",
-      href: "https://www.linkedin.com/in/amkingaustin",
-    },
-    {
-      icon: Twitter,
-      label: "X / Twitter",
-      value: "x.com/KingAustin360",
-      href: "https://x.com/KingAustin360",
-    },
-    {
-      icon: Facebook,
-      label: "Facebook",
-      value: "facebook.com/nworah.ebuka.5",
-      href: "https://www.facebook.com/nworah.ebuka.5",
-    },
+   
   ];
 
   return (
