@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { projects } from '@/data/projects'
 
-const BASE_URL = 'https://nworahebuka.nworahsoft.codes'
+const BASE_URL = 'https://nworahebukaaugustus.vercel.app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const projectUrls = projects.map((project) => ({
