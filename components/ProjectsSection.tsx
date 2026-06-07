@@ -3,12 +3,15 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
-import { ExternalLink, Github, Shield, ShoppingCart, ClipboardCheck, MonitorCheck, ArrowRight, Code } from "lucide-react";
+import { ExternalLink, Github, Shield, ShieldAlert, Store, ShoppingCart, ScanFace, ClipboardCheck, MonitorCheck, ArrowRight, Code } from "lucide-react";
 import { projects } from "@/data/projects";
 
 const iconMap: Record<string, typeof Shield> = {
   Shield,
+  ShieldAlert,
+  Store,
   ShoppingCart,
+  ScanFace,
   ClipboardCheck,
   MonitorCheck,
 };

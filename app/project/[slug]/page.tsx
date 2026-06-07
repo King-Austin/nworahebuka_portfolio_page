@@ -1,14 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink, Github, Shield, ShoppingCart, ClipboardCheck, MonitorCheck } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Shield, ShieldAlert, Store, ShoppingCart, ScanFace, ClipboardCheck, MonitorCheck } from "lucide-react";
 import { projects } from "@/data/projects";
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
 
 const iconMap: Record<string, typeof Shield> = {
   Shield,
+  ShieldAlert,
+  Store,
   ShoppingCart,
+  ScanFace,
   ClipboardCheck,
   MonitorCheck,
 };

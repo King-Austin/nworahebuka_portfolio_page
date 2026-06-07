@@ -1,6 +1,7 @@
 export interface Project {
   slug: string;
   icon: string;
+  category: string;
   title: string;
   subtitle: string;
   description: string;
@@ -16,6 +17,7 @@ export const projects: Project[] = [
   {
     slug: "securecipher",
     icon: "Shield",
+    category: "Security",
     title: "SecureCipher",
     subtitle: "Cryptographic Banking Middleware",
     description:
@@ -27,6 +29,7 @@ export const projects: Project[] = [
       "Stateless API gateway that validates transactions with cryptographic signatures and server-side co-signatures",
       "End-to-end payload encryption ensuring sensitive financial data remains protected throughout the transaction lifecycle",
       "Passwordless authentication flow using ECDH key exchange",
+      "Client-side key generation — private keys never leave the user's device",
       "Zero-trust architecture for secure client–bank communication",
     ],
     tech: ["Django", "Ed25519", "ECDH", "PostgreSQL", "REST API", "React"],
@@ -35,8 +38,53 @@ export const projects: Project[] = [
     screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fwww.securecipher.app&screenshot=true&meta=false&embed=screenshot.url",
   },
   {
+    slug: "phishing-defense-saas",
+    icon: "ShieldAlert",
+    category: "ML Security",
+    title: "Phishing Defense SaaS",
+    subtitle: "ML-Powered Email Threat Detection",
+    description:
+      "Built a full-stack SaaS platform that leverages machine learning to identify and prevent malicious email attacks in real time, classifying threats and surfacing actionable insights.",
+    problemStatement:
+      "Phishing remains the leading vector for account takeover and financial fraud, yet most defenses are reactive and rule-based. There was a need for an intelligent, real-time system that could analyze email content, learn from evolving attack patterns, and give users a clear verdict and explanation rather than a raw spam flag.",
+    features: [
+      "Trained ML models that classify email content as malicious or safe in real time",
+      "Full-stack SaaS architecture with a user-friendly analysis dashboard",
+      "Actionable threat insights explaining why an email was flagged",
+      "Real-time scanning pipeline for inbound email content",
+      "Multi-tenant ready interface for individual and team use",
+    ],
+    tech: ["Python", "Machine Learning", "FastAPI", "scikit-learn", "React"],
+    link: "https://phishing-defense.onrender.com",
+    github: "https://github.com/King-Austin/phishing-defense-saas-main",
+    screenshot: null,
+  },
+  {
+    slug: "storely",
+    icon: "Store",
+    category: "SaaS",
+    title: "Storely",
+    subtitle: "Multi-Vendor E-Commerce Marketplace",
+    description:
+      "Designed a purpose-built multi-vendor marketplace for Nigeria's informal economy — letting vendors onboard fast, sell effortlessly, and scale without friction.",
+    problemStatement:
+      "Existing creator-commerce platforms in Nigeria impose high friction on small and informal vendors: slow onboarding, rigid storefronts, and fees that erode thin margins. Vendors needed a marketplace built for how the informal market actually operates — fast to join, simple to run, and able to scale from a single seller to many.",
+    features: [
+      "Multi-vendor onboarding with rapid store setup",
+      "Per-vendor storefronts and product catalogues",
+      "Streamlined cart and checkout flow optimized for mobile",
+      "Vendor dashboards for inventory and order management",
+      "Architecture designed to scale from a single seller to a full marketplace",
+    ],
+    tech: ["TypeScript", "React", "Node.js", "PostgreSQL"],
+    link: "https://storely.websyncdigital.com.ng",
+    github: "https://github.com/King-Austin/storely",
+    screenshot: null,
+  },
+  {
     slug: "nworahsoft-ecommerce",
     icon: "ShoppingCart",
+    category: "SaaS",
     title: "NworahSoft E-Commerce Suite",
     subtitle: "SME Growth Platform",
     description:
@@ -56,8 +104,31 @@ export const projects: Project[] = [
     screenshot: "https://api.microlink.io/?url=https%3A%2F%2Fnworahsoft-ecommerce-tan.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
   },
   {
+    slug: "smart-classroom-attendance",
+    icon: "ScanFace",
+    category: "EdTech",
+    title: "Smart Classroom Attendance",
+    subtitle: "Multi-Factor Campus Attendance System",
+    description:
+      "Engineered a high-integrity, real-time attendance system with multi-factor verification — combining facial signatures, GPS geo-fencing, and BLE proximity detection.",
+    problemStatement:
+      "Manual and single-factor attendance systems are trivial to spoof — students sign in for absent peers or check in from off-campus. Institutions needed a tamper-resistant system that proves a student is physically present in the right place at the right time, without slowing down the start of class.",
+    features: [
+      "Multi-factor verification: facial signature, GPS geo-fencing, and BLE proximity",
+      "Real-time check-in with tamper-resistant attendance records",
+      "Cross-platform mobile delivery via Capacitor",
+      "Supabase-backed secure data storage and auth",
+      "Faculty dashboard for monitoring participation trends",
+    ],
+    tech: ["React", "Capacitor", "Supabase", "TypeScript", "BLE", "Geolocation"],
+    link: "https://smart-attendance-ivory.vercel.app",
+    github: "https://github.com/King-Austin/Smart_Classroom_Attendance",
+    screenshot: null,
+  },
+  {
     slug: "attendify",
     icon: "ClipboardCheck",
+    category: "EdTech",
     title: "Attendify",
     subtitle: "Digital Attendance Management System",
     description:
@@ -79,6 +150,7 @@ export const projects: Project[] = [
   {
     slug: "smart-cbt",
     icon: "MonitorCheck",
+    category: "EdTech",
     title: "Smart CBT System",
     subtitle: "Digital Examination Platform",
     description:
