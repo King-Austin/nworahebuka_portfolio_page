@@ -131,20 +131,37 @@ const ExperienceSection = () => {
         >
           <h2 className="text-sm font-mono text-primary mb-2">// Education</h2>
           <div className="glass-card p-6">
-            <div className="flex items-start gap-4">
-              <GraduationCap size={24} className="text-primary mt-0.5 shrink-0" />
-              <div>
-                <h4 className="font-semibold text-sm">{education.degree}</h4>
-                <p className="text-xs text-primary mb-1">{education.school}</p>
-                <p className="text-xs font-mono text-muted-foreground mb-2">
-                  {education.period}
-                </p>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  <span className="text-secondary-foreground font-medium">
-                    Relevant Coursework:
-                  </span>{" "}
-                  {education.coursework}
-                </p>
+            <div className="flex flex-col sm:flex-row items-start gap-6">
+              <figure className="w-full sm:w-44 shrink-0">
+                <picture>
+                  <source srcSet="/nworah-ebuka-augustus-graduation-electronic-computer-engineering.webp" type="image/webp" />
+                  <img
+                    src="/nworah-ebuka-augustus-graduation-electronic-computer-engineering.png"
+                    alt="Nworah Ebuka Augustus in graduation gown — B.Eng. Electronic & Computer Engineering, Nnamdi Azikiwe University"
+                    className="w-full h-auto rounded-xl object-cover border border-border"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <figcaption className="mt-2 text-center text-[10px] font-mono text-muted-foreground">
+                  Class of 2026 · Nnamdi Azikiwe University
+                </figcaption>
+              </figure>
+              <div className="flex items-start gap-4">
+                <GraduationCap size={24} className="text-primary mt-0.5 shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-sm">{education.degree}</h4>
+                  <p className="text-xs text-primary mb-1">{education.school}</p>
+                  <p className="text-xs font-mono text-muted-foreground mb-2">
+                    {education.period}
+                  </p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    <span className="text-secondary-foreground font-medium">
+                      Relevant Coursework:
+                    </span>{" "}
+                    {education.coursework}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
