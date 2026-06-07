@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, ExternalLink } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import profileImg from "@/assets/profile.jpg";
+import graduationImg from "@/assets/graduation-hero.webp";
 import TypingAnimation from "./TypingAnimation";
 
 const HeroSection = () => {
@@ -93,22 +93,28 @@ const HeroSection = () => {
             </motion.div>
           </div>
 
-          {/* Profile photo */}
+          {/* Graduation portrait */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex-shrink-0 mx-auto lg:mx-0"
           >
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-2xl overflow-hidden glow-border">
+            <div className="relative w-64 h-72 sm:w-72 sm:h-80 lg:w-80 lg:h-96 rounded-2xl overflow-hidden glow-border">
               <img
-                src={profileImg}
-                alt="Nworah Ebuka Augustus — Backend Engineer"
-                className="w-full h-full object-cover"
+                src={graduationImg}
+                alt="Nworah Ebuka Augustus in graduation gown — B.Eng. Electronic & Computer Engineering, Nnamdi Azikiwe University"
+                className="w-full h-full object-cover object-top"
+                fetchPriority="high"
               />
-              <div className="absolute bottom-3 right-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm border border-border text-xs font-mono text-primary">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                Online &amp; Building
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm border border-border text-xs font-mono text-primary">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                  B.Eng &middot; 2026
+                </span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm border border-border text-xs font-mono text-muted-foreground">
+                  ECE &middot; UNIZIK
+                </span>
               </div>
             </div>
           </motion.div>
