@@ -1,12 +1,15 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { ExternalLink, Github, Shield, ShoppingCart, ClipboardCheck, MonitorCheck, ArrowRight } from "lucide-react";
+import { ExternalLink, Github, Shield, ShieldAlert, Store, ShoppingCart, ScanFace, ClipboardCheck, MonitorCheck, ArrowRight } from "lucide-react";
 import { projects } from "@/data/projects";
 
 const iconMap: Record<string, typeof Shield> = {
   Shield,
+  ShieldAlert,
+  Store,
   ShoppingCart,
+  ScanFace,
   ClipboardCheck,
   MonitorCheck,
 };
@@ -41,7 +44,12 @@ const ProjectsSection = () => {
                 className="glass-card p-6 sm:p-8 group hover:border-primary/30 transition-colors duration-300"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <Icon size={28} className="text-primary" />
+                  <div className="flex items-center gap-3">
+                    <Icon size={28} className="text-primary" />
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2 py-0.5 rounded-full border border-border">
+                      {project.category}
+                    </span>
+                  </div>
                   <div className="flex gap-2">
                     {project.github && (
                       <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label={`${project.title} GitHub`}>

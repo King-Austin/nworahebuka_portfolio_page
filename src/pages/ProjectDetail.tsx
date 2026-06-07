@@ -1,14 +1,17 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink, Github, Shield, ShoppingCart, ClipboardCheck, MonitorCheck } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Shield, ShieldAlert, Store, ShoppingCart, ScanFace, ClipboardCheck, MonitorCheck } from "lucide-react";
 import { projects } from "@/data/projects";
 
 const BASE_URL = "https://www.nworahebuka.nworahsoft.codes";
 
 const iconMap: Record<string, typeof Shield> = {
   Shield,
+  ShieldAlert,
+  Store,
   ShoppingCart,
+  ScanFace,
   ClipboardCheck,
   MonitorCheck,
 };
