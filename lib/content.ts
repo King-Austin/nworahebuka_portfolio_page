@@ -39,6 +39,10 @@ export const projects: Project[] = [
     technologies: ["React", "Capacitor", "Supabase", "TypeScript", "BLE"], liveUrl: "https://smart-attendance-unizik.vercel.app", sourceUrl: "https://github.com/King-Austin/Smart_Classroom_Attendance", gallery: [
       { src: "/projects/smart-classroom-attendance/overview-desktop.png", alt: "Smart Classroom Attendance public interface at desktop width", caption: "The public Smart Attendance interface captured at desktop width." },
       { src: "/projects/smart-classroom-attendance/overview-mobile.png", alt: "Smart Classroom Attendance public interface on a mobile viewport", caption: "The attendance experience at the mobile viewport used by students." },
+      { src: "/projects/smart-classroom-attendance/login.png", alt: "Smart Campus Presence sign-in screen with student and lecturer roles", caption: "Role-aware sign-in for students and lecturers." },
+      { src: "/projects/smart-classroom-attendance/landing-page.png", alt: "Smart Campus Presence mobile landing screen", caption: "Mobile landing experience for the Smart Campus Presence app." },
+      { src: "/projects/smart-classroom-attendance/dashboard.png", alt: "Smart Campus Presence student dashboard showing attendance summary", caption: "Student dashboard with attendance rate, enrolled courses and live-session status." },
+      { src: "/projects/smart-classroom-attendance/courses.png", alt: "Smart Campus Presence courses screen showing registered courses and attendance history", caption: "Registered courses view with attendance progress and history links." },
     ], architecture: "smart-attendance", publication: "published", verification: "verified", featured: true,
   },
   {
