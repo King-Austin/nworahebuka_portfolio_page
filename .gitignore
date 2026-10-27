@@ -23,4 +23,12 @@ dist-ssr
 *.sln
 *.sw?
 .agent
-nextjs/.next/
+
+# Next.js and deployment output
+.next/
+.vercel/
+*.tsbuildinfo
+
+# Local environment files
+.env*
+!.env.example

@@ -1,45 +1,14 @@
-# Nworah Ebuka Augustus — Portfolio
+# Nworah Ebuka Augustus — Next.js portfolio
 
-Personal portfolio site for **Nworah Ebuka Augustus**, a Mid-Level Python/Django Backend Engineer and Co-Founder of [Websync Digital](https://www.websyncdigital.com.ng).
+The production portfolio is a single Next.js 16 application at the repository root.
 
-## Tech Stack
-
-- **Framework:** React 18 + TypeScript
-- **Build Tool:** Vite
-- **Styling:** Tailwind CSS + shadcn/ui
-- **Animations:** Framer Motion
-
-## Getting Started
-
-```sh
-# Install dependencies
+```bash
 npm install
-
-# Start the development server
 npm run dev
-```
-
-## Project Structure
-
-```
-src/
-├── components/    # Reusable UI components
-├── data/          # Static data (projects, etc.)
-├── pages/         # Route pages (Index, ProjectDetail, Admin, NotFound)
-├── hooks/         # Custom React hooks
-└── lib/           # Utility functions
-```
-
-## Build & Deploy
-
-```sh
-# Build for production
+npm run typecheck
+npm run lint
+npm test
 npm run build
-
-# Preview production build
-npm run preview
 ```
 
-## License
-
-© Nworah Ebuka Augustus. All rights reserved.
+Public content is controlled by publication and verification states in `lib/content.ts`. Drafts and unverified records are filtered before route generation, navigation, metadata, JSON-LD and sitemap generation.
