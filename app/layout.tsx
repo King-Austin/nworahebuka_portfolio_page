@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Instrument_Sans, Newsreader } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { JsonLd } from "@/components/JsonLd";
@@ -29,5 +30,5 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, them
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const website = { "@context": "https://schema.org", "@type": "WebSite", "@id": `${site.origin}/#website`, url: site.origin, name: site.shortName, alternateName: [site.name, "King Austin"], description: site.description, inLanguage: "en-NG", publisher: { "@id": `${site.origin}/#person` } };
-  return <html lang="en-NG" suppressHydrationWarning className={`${sans.variable} ${serif.variable}`}><body><JsonLd data={website} /><a href="#main" className="skip-link">Skip to content</a><Nav /><main id="main">{children}</main><Footer /><GoogleAnalytics /></body></html>;
+  return <html lang="en-NG" suppressHydrationWarning className={`${sans.variable} ${serif.variable}`}><body><JsonLd data={website} /><a href="#main" className="skip-link">Skip to content</a><Nav /><main id="main">{children}</main><Footer /><GoogleAnalytics /><Analytics /></body></html>;
 }
